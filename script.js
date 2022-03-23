@@ -6,8 +6,8 @@ $(document).ready(function () {
     arrows: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1024,
@@ -39,7 +39,7 @@ $(document).ready(function () {
   });
 });
 
-function openCity(evt, cityName) {
+function openEntry(evt, entryName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -56,6 +56,6 @@ function openCity(evt, cityName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(entryName).style.display = "block";
   evt.currentTarget.className += " active";
 }
